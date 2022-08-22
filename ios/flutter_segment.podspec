@@ -11,18 +11,17 @@ A new flutter plugin project.
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
-  s.source           = { :path => '.' }
+  s.source           = { :path => '.', :git => 'https://github.com/snorble/analytics-ios-integration-firebase.git' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.dependency 'Analytics', '4.1.6'
   s.dependency 'Segment-Amplitude', '3.3.2'
   s.dependency 'segment-appsflyer-ios', '6.5.2'
-  s.dependency 'Segment-Firebase', '2.7.10'
+  s.dependency 'Segment-Firebase', '2.7.10+1'
   s.ios.deployment_target = '11.0'
 
   # Added because Segment-Amplitude dependencies on iOS cause this error:
   # [!] The 'Pods-Runner' target has transitive dependencies that include statically linked binaries: (Segment-Amplitude)
   s.static_framework = true
 end
-
